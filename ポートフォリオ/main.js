@@ -1,6 +1,7 @@
 const menuButton = document.querySelector('.js-menuButton');
 const menu = document.querySelector('.js-menu');
 
+
 function menuOpenClose(){
   menuButton.classList.toggle('active');
   menu.classList.toggle('active');
