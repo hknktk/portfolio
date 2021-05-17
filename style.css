@@ -44,11 +44,11 @@ header {
           transform: translateX(-50%);
   font-family: 'Volkhov', serif;
   font-size: 1.4rem;
-  color: #ecac22;
+  color: #48ced8;
 }
 
 .menu--button.active .menu--button__bar {
-  background-color: #4e4848;
+  background-color: #48ced8;
 }
 
 .menu--button.active .menu--button__bar:nth-of-type(1) {
@@ -67,7 +67,7 @@ header {
 
 .menu--button.active::after {
   content: "CLOSE";
-  color: #4e4848;
+  color: #48ced8;
 }
 
 .menu--button__bar {
@@ -76,7 +76,7 @@ header {
   left: 25%;
   width: 50%;
   height: 2px;
-  background-color: #ecac22;
+  background-color: #48ced8;
   -webkit-transition: opacity .3s ,-webkit-transform 1s;
   transition: opacity .3s ,-webkit-transform 1s;
   transition: transform 1s ,opacity .3s;
@@ -100,7 +100,7 @@ header {
   width: 100%;
   height: 100vh;
   background-color: #fff;
-  z-index: 2;
+  z-index: 10;
   -webkit-transition: opacity .6s;
   transition: opacity .6s;
   opacity: 0;
@@ -152,7 +152,7 @@ header {
 
 .menu--list li a {
   font-size: 3.5rem;
-  color: #4e4848;
+  color: #48ced8;
 }
 
 .menu--list li a span {
@@ -179,30 +179,34 @@ header {
 
 .hero--img h1 {
   position: absolute;
-  top: 15%;
+  bottom: -50px;
   left: 10%;
-  font-size: 2.8rem;
+  font-size: 2.2rem;
   line-height: 1.6;
-  color: #ecac22;
   font-family: 'Volkhov', serif;
 }
 
 .hero--img h1 span {
   position: relative;
-  display: block;
-  font-size: 4rem;
+  display: table;
+  font-size: 3.3rem;
+  padding: 8px;
+  color: #fff;
+  z-index: 1;
 }
 
 .hero--img h1 span::after {
   content: "";
   position: absolute;
-  bottom: 0;
+  top: 0;
   left: 0;
+  display: block;
   width: 100%;
-  height: 1px;
-  background-color: #ecac22;
+  height: 100%;
+  background-color: #48ced8;
   -webkit-animation: underLine 1.2s ease-in-out forwards;
           animation: underLine 1.2s ease-in-out forwards;
+  z-index: -1;
 }
 
 @-webkit-keyframes underLine {
@@ -246,16 +250,19 @@ header {
   text-align: center;
   margin-bottom: 16px;
   font-family: 'Volkhov', serif;
+  margin-bottom: 40px;
 }
 
 .block--title::after {
   content: "";
   position: absolute;
-  bottom: -10px;
-  left: 25%;
+  bottom: -5px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   width: 0%;
-  height: 2px;
-  background-color: red;
+  height: 5px;
+  background-color: #48ced8;
   -webkit-transition: 1s;
   transition: 1s;
   -webkit-transform-origin: left;
@@ -263,7 +270,7 @@ header {
 }
 
 .block--title.inview::after {
-  width: 50%;
+  width: 20px;
 }
 
 .block--inner {
@@ -308,7 +315,7 @@ header {
   left: 0;
   width: 1%;
   height: 2px;
-  background-color: #b83232;
+  background-color: #48ced8;
   -webkit-transition: 1s;
   transition: 1s;
 }

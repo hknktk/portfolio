@@ -24,4 +24,5 @@ const callback = function (el, isIntersecting) {
 } 
 
 
+const so = new ScrollObserver('.js-block--title', callback);
 const so2 = new ScrollObserver('.emphasis', callback);
