@@ -1,6 +1,7 @@
 const menuButton = document.querySelector('.js-menuButton');
 const menu = document.querySelector('.js-menu');
 
+
 function menuOpenClose(){
   menuButton.classList.toggle('active');
   menu.classList.toggle('active');
@@ -23,4 +24,5 @@ const callback = function (el, isIntersecting) {
 } 
 
 
-const so2 = new ScrollObserver('.emphasis', callback);
+
+const so = new ScrollObserver('.emphasis', callback);
