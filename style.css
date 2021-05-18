@@ -184,6 +184,7 @@ header {
   font-size: 2.2rem;
   line-height: 1.6;
   font-family: 'Volkhov', serif;
+  color: #48ced8;
 }
 
 .hero--img h1 span {
@@ -320,23 +321,77 @@ header {
   width: 100%;
 }
 
-.work--item li {
-  display: block;
+.box {
+  background-color: #fff;
+  padding: 8px;
+  margin-bottom: 40px;
 }
 
-.work--item li a {
+.box--title {
+  position: relative;
+  font-size: 2.2rem;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.box--title::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: -5px;
+  width: 10px;
+  height: 2px;
+  background-color: #1d1d1d;
+}
+
+.block--inner .work--item li:nth-of-type(1) h4::before {
+  content: "1.";
+}
+
+.block--inner .work--item li:nth-of-type(2) h4::before {
+  content: "2.";
+}
+
+.block--inner .work--item li:nth-of-type(3) h4::before {
+  content: "3.";
+}
+
+.block--inner .work--item li:nth-of-type(4) h4::before {
+  content: "4.";
+}
+
+.block--inner .work--item li {
   display: block;
-  width: 90%;
-  height: 450px;
+  margin-bottom: 80px;
+}
+
+.block--inner .work--item li h4 {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.block--inner .work--item li a {
+  display: block;
+  width: 80%;
+  height: 350px;
   margin: 0 auto;
-  -webkit-filter: grayscale(0.5);
-          filter: grayscale(0.5);
 }
 
-.work--item li a span img {
+.block--inner .work--item li a span img {
   display: block;
   width: 80%;
   margin: 0 auto;
   height: 100%;
+  -webkit-box-shadow: 0px 0px 3px #333;
+          box-shadow: 0px 0px 3px #333;
+}
+
+.block--inner .work--item li p {
+  padding: 8px;
+  font-size: 1.6rem;
+  text-align: justify;
 }
 /*# sourceMappingURL=style.css.map */
